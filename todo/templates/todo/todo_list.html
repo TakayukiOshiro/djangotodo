@@ -1,0 +1,18 @@
+<h1>Todo List</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th scope="col">title</th>
+            <th scope="col">deadline</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for task in tasks %}
+        <tr>
+            <td>{{ task.title }}</td>
+            <td>{{ task.deadline }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
